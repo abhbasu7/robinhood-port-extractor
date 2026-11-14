@@ -1,0 +1,7 @@
+# Keep only the extension runtime and this Git allowlist.
+/*
+!/.gitignore
+!/manifest.json
+!/popup.html
+!/popup.js
+!/content.js

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 280px; font-family: sans-serif; padding: 12px; }
+    h3 { margin-top: 0; text-align: center; }
+    button, select { box-sizing: border-box; width: 100%; }
+    button { background: #00c805; color: white; border: none; padding: 10px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 13px; }
+    button:hover { background: #00b004; }
+    button:disabled { opacity: 0.6; cursor: default; }
+    select { margin-top: 10px; padding: 8px; }
+    #exportBtn { margin-top: 8px; }
+    p { font-size: 11px; color: #666; margin-top: 10px; margin-bottom: 0; }
+    #status { color: #333; }
+  </style>
+</head>
+<body>
+  <h3>Page Data Exporter</h3>
+  <button id="scanBtn" type="button">Find tables</button>
+  <label for="tableSelect" id="tableLabel" hidden>Choose data to export</label>
+  <select id="tableSelect" hidden></select>
+  <button id="exportBtn" type="button" hidden>Download CSV</button>
+  <p>Exports data currently visible on this page. Data stays in your browser.</p>
+  <p id="status" role="status" aria-live="polite"></p>
+  <script src="popup.js"></script>
+</body>
+</html>

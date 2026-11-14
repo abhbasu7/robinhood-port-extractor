@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "Local Page Data Exporter",
+  "version": "2.0",
+  "description": "Export visible tables and table-like data from the active page to a local CSV.",
+  "permissions": ["activeTab", "scripting"],
+  "action": { "default_popup": "popup.html" }
+}
